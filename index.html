@@ -803,7 +803,7 @@ function dlCV(e) {
   const blob = new Blob([arr], { type: 'application/pdf' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  a.href = url; a.download = 'Mazin_Almaswaby_CV.pdf';
+  a.href = url; a.download = './Mazin_Almaswaby_CV.pdf';
   document.body.appendChild(a); a.click();
   document.body.removeChild(a); URL.revokeObjectURL(url);
 }
